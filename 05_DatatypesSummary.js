@@ -31,3 +31,26 @@ const myFunction = function(){
 console.log(typeof outsideTemp);  // datatype of null -> object
 console.log(typeof myFunction);  
 console.log(typeof bigNumber);  
+
+// -----------------------------------------------------------------
+//Memory 
+
+// Stack(Primitive {original value is not changed (copy of original value is given and changed)})
+// Heap(Non-primitive {original value is changed (reference of original value is given and changed)})
+
+let name1 = "Smriti"
+let newName = name1
+newName = "Lucky"
+console.log(name1);
+console.log(newName);
+
+
+let user1 = {
+    email: "smriti@gmail.com",
+    upi: "123@ypl"
+}
+let user2 = user1
+user2.email = "lucky@gmail.com"
+
+console.log(user1.email);
+console.log(user2.email);
